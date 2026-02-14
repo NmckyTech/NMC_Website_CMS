@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: NmckyTech/NMC_Website_CMS
   branch: main
 
 publish_mode: editorial_workflow
@@ -7,9 +8,6 @@ publish_mode: editorial_workflow
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-site_url: "https://YOUR_DOMAIN_HERE"
-display_url: "https://YOUR_DOMAIN_HERE"
-logo_url: "/images/uploads/church-logo.png"
 
 collections:
   - name: "homepage"
