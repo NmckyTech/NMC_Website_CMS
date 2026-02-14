@@ -1,0 +1,22 @@
+/* Footer styles extracted from staff.html for reuse */
+.footer a,
+.footer a:visited {
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer a:hover,
+.footer a:focus {
+    color: #999 !important;
+}
+.footer-join-icon-square {
+    background: #fff;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}

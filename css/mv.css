@@ -1,0 +1,535 @@
+/* Core Values 2x2 Grid */
+
+.core-values-section {
+    width: 100vw;
+    height: 100vh;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    display: flex;
+    align-items: stretch;
+}
+
+.core-values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    min-height: 500px;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.core-value-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.2s;
+}
+.core-value-block:nth-child(1) { background: #18406a; }
+.core-value-block:nth-child(2) { background: #1e5a99; }
+.core-value-block:nth-child(3) { background: #2176ae; }
+.core-value-block:nth-child(4) { background: #2892d7; }
+.core-value-block h3 {
+    margin: 0 0 12px 0;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.core-value-block p {
+    margin: 0;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 900px) {
+    .core-values-section, .core-values-grid {
+        height: auto;
+        min-height: 0;
+    }
+    .core-values-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .core-value-block {
+        font-size: 1.2rem;
+        padding: 24px 8px;
+    }
+    .core-value-block h3 {
+        font-size: 1.5rem;
+    }
+    .core-value-block p {
+        font-size: 1rem;
+    }
+}
+    .mv-hero-section {
+        position: relative;
+        width: 100vw;
+        min-height: 90vh;
+        max-height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    .mv-hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('/images/mission_header.png') center center/cover no-repeat;
+        z-index: 1;
+    }
+
+    .mv-hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(16, 40, 80, 0.7);
+        z-index: 2;
+    }
+
+    .mv-hero-content {
+        position: relative;
+        z-index: 3;
+        padding: 80px 0 0 100px;
+        max-width: 900px;
+    }
+
+    .mv-hero-label {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 2rem;
+        letter-spacing: 0.01em;
+    }
+
+    .mv-hero-title {
+        font-size: 4rem;
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.1;
+        margin: 0;
+        font-family: 'Georgia', 'Times New Roman', serif;
+        text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 900px) {
+        .mv-hero-content {
+            padding: 60px 0 0 30px;
+        }
+
+        .mv-hero-title {
+            font-size: 2.2rem;
+        }
+
+        .mv-hero-label {
+            font-size: 1.2rem;
+        }
+    }
+
+
+.mv-two-col-section {
+    background: #0d2c4a;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.mv-two-col-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    max-height: 500px;
+    margin: 0 auto;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.mv-two-col-text {
+    flex: 1 1 500px;
+    font-size: 5rem;
+    line-height: 2;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    max-width: 700px;
+    color: #fff !important;
+}
+
+.mv-two-col-text,
+.mv-two-col-text *,
+.mv-two-col-text strong {
+    color: #fff !important;
+}
+
+.mv-two-col-text strong {
+    font-weight: 700;
+}
+
+.mv-two-col-img {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    max-width: 600px;
+}
+
+.mv-two-col-img img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .mv-two-col-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mv-two-col-img,
+    .mv-two-col-text {
+        max-width: 100%;
+    }
+
+    .mv-two-col-img img {
+        max-width: 100%;
+    }
+}
+
+/* Shared split-section styles for Love God, Vision, and Core Values */
+.mv-split-section, .vision-split-section {
+    width: 100vw;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.mv-split-container, .vision-split-container {
+    display: flex;
+    width: 100vw;
+    min-height: 500px;
+    height: 40vw;
+    max-height: 550px;
+}
+.mv-split-left, .mv-split-right, .vision-split-left, .vision-split-right {
+    flex: 1 1 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+.mv-split-left, .vision-split-right {
+    overflow: hidden;
+    min-height: 350px;
+}
+.mv-split-img-bg, .vision-split-img-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+.mv-split-overlay, .vision-split-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(24, 97, 170, 0.75);
+    z-index: 2;
+}
+.mv-split-left-content, .vision-split-right-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.mv-split-title, .vision-split-title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+    display: block;
+}
+.mv-split-right, .vision-split-left {
+    background: #0d2c4a;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mv-split-right-content, .vision-split-left-content {
+    flex: 1 1 500px;
+    font-size: 5rem;
+    line-height: 2;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    max-width: 700px;
+    color: #fff !important;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.mv-split-right-content, .mv-split-right-content *, .mv-split-right-content strong,
+.vision-split-left-content, .vision-split-left-content *, .vision-split-left-content strong {
+    color: #fff !important;
+}
+.mv-split-right-content strong, .vision-split-left-content strong {
+    font-weight: 700;
+    color: #fff;
+}
+@media (max-width: 900px) {
+    .mv-split-container, .vision-split-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+    }
+    .mv-split-left, .mv-split-right, .vision-split-left, .vision-split-right {
+        min-height: 220px;
+        width: 100vw;
+    }
+    .mv-split-title, .vision-split-title { font-size: 2rem; }
+    .mv-split-right-content, .vision-split-left-content { font-size: 1.2rem; margin: 30px 20px; }
+}
+
+.mv-split-section {
+    width: 100vw;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mv-split-container {
+    display: flex;
+    width: 100vw;
+    min-height: 500px;
+    height: 40vw;
+    max-height: 600px;
+}
+
+.mv-split-left,
+.mv-split-right {
+    flex: 1 1 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+.mv-split-left {
+    overflow: hidden;
+    min-height: 350px;
+}
+
+.mv-split-img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/prayer_care.png') center center/cover no-repeat;
+    z-index: 1;
+}
+
+.mv-split-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 97, 170, 0.75);
+    z-index: 2;
+}
+
+.mv-split-left-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.mv-split-title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+    display: block;
+}
+
+.mv-split-right {
+    background: #0d2c4a;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mv-split-right-content {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 40px;
+    line-height: 1.5;
+}
+
+.mv-split-right-content strong {
+    font-weight: 700;
+    color: #fff;
+}
+
+        .vision-split-section {
+            width: 100vw;
+            background: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .vision-split-container {
+            display: flex;
+            width: 100vw;
+            min-height: 500px;
+            height: 40vw;
+            max-height: 600px;
+        }
+
+        .vision-split-left,
+        .vision-split-right {
+            flex: 1 1 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 0;
+        }
+
+        .vision-split-right {
+            overflow: hidden;
+            min-height: 350px;
+        }
+
+        .vision-split-img-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/images/vision.jpg') center center/cover no-repeat;
+            z-index: 1;
+        }
+
+        .vision-split-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(24, 97, 170, 0.75);
+            z-index: 2;
+        }
+
+        .vision-split-right-content {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .vision-split-title {
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.01em;
+            text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+            display: block;
+        }
+
+        .vision-split-left {
+            background: #0d2c4a;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vision-split-left-content {
+            color: #fff;
+            font-size: 2rem;
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 40px;
+            line-height: 1.5;
+        }
+
+        .vision-split-left-content strong {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        @media (max-width: 900px) {
+            .vision-split-container {
+                flex-direction: column;
+                height: auto;
+                min-height: 0;
+                max-height: none;
+            }
+
+            .vision-split-left,
+            .vision-split-right {
+                min-height: 220px;
+                width: 100vw;
+            }
+
+            .vision-split-title {
+                font-size: 2rem;
+            }
+
+            .vision-split-left-content {
+                font-size: 1.2rem;
+                margin: 30px 20px;
+            }
+        }

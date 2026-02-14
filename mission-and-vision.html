@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholasville Methodist Church</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/mv.css" />
+    <style>
+        .nav-home-link {
+            color: #fff !important;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-home-link:hover,
+        .nav-home-link:focus {
+            color: #ccc !important;
+        }
+
+        .nav-home-link:active {
+            color: #fff !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <img src="images/NMC_Transparent.png" alt="Nicholasville Methodist Church"
+                    style="height:28px;vertical-align:middle;margin-right:1.25rem;" />
+                <a href="https://www.nmcky.org/" class="nav-home-link">Nicholasville Methodist</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link" data-menu="about">About</a>
+                <a href="#" class="nav-link" data-menu="ministries">Ministries</a>
+                <a href="#" class="nav-link" data-menu="serve">Serve</a>
+                <a href="#" class="nav-link" data-menu="giving">Giving</a>
+                <a href="#" class="nav-link" data-menu="events">Events</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-search" aria-label="Search">&#128269;</button>
+                <button class="nav-give"
+                    onclick="window.open('https://secure.myvanco.com/YNM1/home', '_blank')">Give</button>
+            </div>
+        </div>
+        <div class="nav-menu-overlay" id="navMenuOverlay">
+            <div class="nav-menu-content" id="navMenuContent">
+                <!-- Dynamic menu content will be injected here -->
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-header">
+        <div class="hero-bg"
+            style="background-image: url('images/mission-and-vision.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="hero-overlay">
+            <h1 class="hero-title"><strong>We exist to love God,
+                <br>love people, and make<br>
+                disciples.<br></strong>
+            </h1>
+        </div>
+    </header>
+
+    <section class="mv-two-col-section">
+        <div class="mv-two-col-container">
+            <div class="mv-two-col-text">
+                <p>Welcome to Nicholasville Methodist Church!<br>
+                We’re so glad that you stopped by and are interested in our church.<br><br>
+                Nicholasville Methodist is a community of people growing in love for God and each other through
+                intentional relationships, authentic discipleship, and faithfully serving our neighbors. <br><br>
+                We would love to meet you and welcome you into our community of faith. We invite you to join us
+                for worship this Sunday!</p>
+            </div>
+            <div class="mv-two-col-img">
+                <img src="images/joy.png" alt="Celebration" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Love God Section (Two-Column) -->
+    <section class="mv-split-section">
+        <div class="mv-split-container">
+            <div class="mv-split-left">
+                <div class="mv-split-img-bg"></div>
+                <div class="mv-split-overlay"></div>
+                <div class="mv-split-left-content">
+                    <span class="mv-split-title">Love God.</span>
+                </div>
+            </div>
+            <div class="mv-split-right">
+                <div class="mv-split-right-content">
+                    <p>We <strong>love God</strong> by growing in our knowledge of Him and living in worshipful
+                    obedience to His Word.
+                    </p>
+                    <p>We strive to be a church where every person encounters <strong>the love of Christ</strong>,
+                    grows in faith, and serves our neighbors with compassion and grace.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Vision Section (Two-Column) -->
+    <section class="vision-split-section">
+        <div class="vision-split-container">
+            <div class="vision-split-left">
+                <div class="vision-split-left-content">
+                    <p>As a church, we are called to carry out the <strong>Great Commission and the Great
+                            Commandment</strong>,
+                            and our mission statement was created to capture both of these critical mandates.</p>
+                    <p>Our mission drives everything we do, <strong>from the ministries we provide to the resources we
+                            produce.</strong> We hope this calling serves as an invitation to actively participate with
+                            us in the work of the Lord rather than remain a passive observer.</p>
+                    <p>We strive to be a church where every person encounters <strong>the love of Christ</strong>, grows in
+                        faith, and serves our neighbors with compassion and grace.</p>
+                </div>
+            </div>
+            <div class="vision-split-right">
+                <div class="vision-split-img-bg"></div>
+                <div class="vision-split-overlay"></div>
+                <div class="vision-split-right-content">
+                    <span class="vision-split-title"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values / Supporting Content -->
+    <section class="core-values-section">
+        <div class="core-values-grid">
+            <div class="core-value-block">
+                <h3>Worship</h3>
+                <p>We gather to honor God and experience His presence together.</p>
+            </div>
+            <div class="core-value-block">
+                <h3>Community</h3>
+                <p>We build authentic relationships and support one another in love.</p>
+            </div>
+            <div class="core-value-block">
+                <h3>Discipleship</h3>
+                <p>We grow in faith through teaching, study, and spiritual practices.</p>
+            </div>
+            <div class="core-value-block">
+                <h3>Service</h3>
+                <p>We serve our neighbors and the world, sharing Christ’s love in action.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shared Footer Placeholder -->
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+    <script>
+        // Dynamically load the shared footer
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('footer').outerHTML = html;
+            });
+    </script>
+</body>
+
+</html>

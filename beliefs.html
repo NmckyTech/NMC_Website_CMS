@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholasville Methodist Church</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .footer a,
+        .footer a:visited {
+            color: #fff !important;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover,
+        .footer a:focus {
+            color: #999 !important;
+        }
+
+        .nav-home-link {
+            color: #fff !important;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-home-link:hover,
+        .nav-home-link:focus {
+            color: #ccc !important;
+        }
+
+        .nav-home-link:active {
+            color: #fff !important;
+        }
+
+        .footer-join-icon-square {
+            background: #fff;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        .gospel-section, .beliefs-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: 2rem;
+            background: #002b5c;
+            border-radius: 1.5rem;
+            max-width: 90vw;
+            margin: 0.5rem auto;
+        }
+
+        .gospel-section h2, .beliefs-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .gospel-section p, .beliefs-section p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .gospel-section img, .beliefs-section img {
+            width: 100%;
+            border-radius: 1.5rem;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <img src="images/NMC_Transparent.png" alt="Nicholasville Methodist Church"
+                    style="height:28px;vertical-align:middle;margin-right:1.25rem;" />
+                <a href="https://www.nmcky.org/" class="nav-home-link">Nicholasville Methodist</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link" data-menu="about">About</a>
+                <a href="#" class="nav-link" data-menu="ministries">Ministries</a>
+                <a href="#" class="nav-link" data-menu="serve">Serve</a>
+                <a href="#" class="nav-link" data-menu="giving">Giving</a>
+                <a href="#" class="nav-link" data-menu="events">Events</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-search" aria-label="Search">&#128269;</button>
+                <button class="nav-give"
+                    onclick="window.open('https://secure.myvanco.com/YNM1/home', '_blank')">Give</button>
+            </div>
+        </div>
+        <div class="nav-menu-overlay" id="navMenuOverlay">
+            <div class="nav-menu-content" id="navMenuContent">
+                <!-- Dynamic menu content will be injected here -->
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-header">
+        <div class="hero-bg" style="background-image: url('images/beliefs_bkg.jpg');
+                background-size: cover; background-position: center; height: 80%; display: flex; align-items: center;
+                justify-content: center;">
+            <div class="hero-overlay">
+            <h1 class="hero-title">Inspiring followers
+                <br>of Jesus Christ.
+            </h1>
+            <div class="cta-buttons">
+                <a href="get-involved.html">Get Involved</a>
+                <a href="connections.html" target="_blank" rel="noopener">Connect With Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="beliefs-section">
+        <div style="flex: 2; color: #fff;">
+            <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">
+                Our Beliefs?</h2>
+            <p style="font-size: 1.25rem; line-height: 1.6; font-weight: 400;">
+                At Nicholasville Methodist Church, we believe in the transformative power of faith and the teachings of
+                Jesus Christ. Our core beliefs are rooted in the principles of love, grace, and community. We are committed
+                to fostering a welcoming environment where individuals can grow spiritually, serve others, and make a positive
+                impact in the world. We uphold the doctrines of the United Methodist Church, emphasizing the importance
+                of scripture, tradition, reason, and experience in our faith journey. Join us as we seek to live out our
+                faith through worship, fellowship, and service.
+            </p>
+        </div>
+        <div style="flex: 1;">
+            <img src="images/beliefs.png" alt="Beliefs" style="width: 100%; border-radius: 1.5rem; object-fit: cover;">
+        </div>
+    </section>
+
+    <section class="expect-section" style="max-width: 90vw; margin: 2rem auto;">
+        <div style="flex: 2; color:#565659;">
+            <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">
+                What to Expect</h2>
+            <p style="font-size:1.25rem; line-height: 1.5; font-weight: 400;">
+                At NMC, we invite you to come as you are! Members of our congregations at all services vary widely in dress,
+                from suits to shorts, and from dresses to denim. However you are comfortable, we invite you to come worship
+                with our community. Our 10:45 AM worship service is through a blend of contemporary and traditional.<br><br>
+
+                While children are invited to attend, nursery care is available for children preschool-aged & under in the lower level
+                from 9:30 AM – 12:00 PM.<br>
+            </p>
+        </div>
+    </section>
+
+    <section class="gospel-section">
+        <div style="flex: 2; color: #fff;">
+            <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">
+                What Is the Gospel?</h2>
+            <p style="font-size: 1.25rem; line-height: 1.6; font-weight: 400;">The gospel is called “good news” for a reason.
+                It’s basically saying that even though people mess up—make mistakes, hurt others, fall short—there’s still a way
+                to be close to God. The story goes that humanity got disconnected, but God stepped in by sending Jesus. He lived
+                without messing up, was killed on a cross, and then came back to life. That wasn’t just some random event—it was
+                meant as a sacrifice big enough to cover all the wrong that creates distance between us and God.<br><br>
+
+                If someone chooses to accept that, it’s not just about forgiveness. It’s about starting fresh, with new purpose,
+                hope, and a real connection to God that wasn’t there before.
+            </p>
+        </div>
+        <div style="flex: 1;">
+            <img src="images/gospel.png" alt="Gospel" style="width: 100%; border-radius: 1.5rem; object-fit: cover;">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <section class="footer-col footer-col-nav"
+                style="border-right:2px solid #ccc; padding-right:32px; margin-right:16px;">
+                <ul class="footer-list">
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="mission-and-vision.html"><strong>Mission & Vision</strong></a></li>
+                    <li><a href="ministries.html"><strong>Ministries</strong></a></li>
+                    <li><a href="serve.html"><strong>Serve</strong></a></li>
+                    <li><a href="events.html"><strong>Events</strong></a></li>
+                    <li><a href="contact.html"><strong>Contact</strong></a></li>
+                </ul>
+            </section>
+
+            <section class="footer-col footer-col-info">
+                <div class="footer-title">Nicholasville Methodist Church</div>
+                <ul class="footer-list footer-list-info">
+                    <li><a href="new-here.html">New Here</a></li>
+                    <li><a href="mission-and-vision.html">Mission & Vision</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="jobs.html">Jobs & Residencies</a></li>
+                    <li><a href="weddings_funerals.html">Weddings & Funerals</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-col footer-col-ministry">
+                <div class="footer-title">Ministries</div>
+                <ul class="footer-list footer-list-ministry">
+                    <li><a href="ministries.html#care">Care</a></li>
+                    <li><a href="ministries.html#connections">Connections</a></li>
+                    <li><a href="ministries.html#kids">Kids</a></li>
+                    <li><a href="ministries.html#students">Students</a></li>
+                    <li><a href="ministries.html#young-adults">Young Adults</a></li>
+                    <li><a href="ministries.html#adults">Adults</a></li>
+                    <li><a href="ministries.html#espanol">Español</a></li>
+                    <li><a href="ministries.html#local-missions">Local Missions</a></li>
+                    <li><a href="ministries.html#global-missions">Global Missions</a></li>
+                    <li><a href="ministries.html#manna">Manna</a></li>
+                    <li><a href="ministries.html#new-beginnings">New Beginnings</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-col footer-col-join">
+                <div class="footer-join-row">
+                    <span class="footer-join-icon-square"><span class="footer-join-icon">👥</span></span>
+                    <span class="footer-join-label">
+                        <span class="footer-join-label-bold"><a href="join-us.html">Join us in person</a></span></span>
+                </div>
+                <hr class="footer-hr" />
+                <div class="footer-join-row">
+                    <span class="footer-join-icon-square"><span class="footer-join-icon">💻</span></span>
+                    <span class="footer-join-label"><a href="https://www.youtube.com/@nmckytech"><span
+                                class="footer-join-label-bold">Join us online</span></a></span>
+                </div>
+                <hr class="footer-hr" />
+                <div class="footer-join-row">
+                    <span class="footer-join-icon-square"><span class="footer-join-icon">✉️</span></span>
+                    <span class="footer-join-label">
+                        <span class="footer-join-label-sub">Subscribe to</span><br>
+                        <span class="footer-join-label-bold"><a href="newsletter.html">NMC News</a></span>
+                    </span>
+                </div>
+            </section>
+
+            <section class="footer-col footer-col-contact">
+                <div class="footer-contact-row">
+                    <span class="footer-contact-logo"><img src="images/NMC_Transparent.png"
+                            alt="Nicholasville Methodist Church"
+                            style="height:28px;vertical-align:middle;margin-right:0.7rem;" /></span>
+                    <span class="footer-contact-title">Nicholasville Methodist Church</span>
+                </div>
+                <div><strong>PHONE:</strong> 859-885-4481<br /></div>
+                <div>303 West Maple Street<br />Nicholasville, KY 40356</div>
+                <div class="footer-copyright">Copyright © 2025 Nicholasville Methodist Church. All rights reserved.
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/NichMCKY/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="images/facebook-svgrepo-com.svg" alt="Facebook" width="24" height="24">
+                    </a>
+                    <a href="https://www.instagram.com/nicholasvillemethodist/" target="_blank" rel="noopener"
+                        aria-label="Instagram">
+                        <img src="images/instagram-logo-svgrepo.svg" alt="Instagram" width="24" height="24">
+                    </a>
+                    <a href="https://www.youtube.com/@nmckytech" target="_blank" rel="noopener" aria-label="YouTube">
+                        <img src="images/youtube-svgrepo.svg" alt="YouTube" width="24" height="24">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

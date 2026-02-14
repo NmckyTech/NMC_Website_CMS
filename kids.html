@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholasville Methodist Church</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <style>
+
+        .nav-home-link {
+            color: #fff !important;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-home-link:hover,
+        .nav-home-link:focus {
+            color: #ccc !important;
+        }
+
+        .nav-home-link:active {
+            color: #fff !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <img src="images/NMC_Transparent.png" alt="Nicholasville Methodist Church"
+                    style="height:28px;vertical-align:middle;margin-right:1.25rem;" />
+                <a href="https://www.nmcky.org/" class="nav-home-link">Nicholasville Methodist</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link" data-menu="about">About</a>
+                <a href="#" class="nav-link" data-menu="ministries">Ministries</a>
+                <a href="#" class="nav-link" data-menu="serve">Serve</a>
+                <a href="#" class="nav-link" data-menu="giving">Giving</a>
+                <a href="#" class="nav-link" data-menu="events">Events</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-search" aria-label="Search">&#128269;</button>
+                <button class="nav-give"
+                    onclick="window.open('https://secure.myvanco.com/YNM1/home', '_blank')">Give</button>
+            </div>
+        </div>
+        <div class="nav-menu-overlay" id="navMenuOverlay">
+            <div class="nav-menu-content" id="navMenuContent">
+                <!-- Dynamic menu content will be injected here -->
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-header">
+        <div class="hero-bg" style="background-image: url('images/kids.jpg');
+            background-size: cover; background-position: center; height: 70vh; display: flex; align-items: center;
+            justify-content: center;">
+            <div class="hero-overlay">
+                <h1 class="hero-title">NMC Kids
+                    <br>Equipping kids to know, love, and serve Jesus.
+                  </h1>
+            <div class="cta-buttons">
+                <a href="get-involved.html">Get Involved</a>
+                <a href="connections.html" target="_blank" rel="noopener">Connect With Us</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Shared Footer Placeholder -->
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+    <script>
+        // Dynamically load the shared footer
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('footer').outerHTML = html;
+            });
+    </script>
+</body>
+
+</html>

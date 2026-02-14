@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholasville Methodist Church</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/staff.css" />
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <img src="images/NMC_Transparent.png" alt="Nicholasville Methodist Church"
+                    style="height:28px;vertical-align:middle;margin-right:1.25rem;" />
+                <a href="https://www.nmcky.org/" class="nav-home-link">Nicholasville Methodist</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link" data-menu="about">About</a>
+                <a href="#" class="nav-link" data-menu="ministries">Ministries</a>
+                <a href="#" class="nav-link" data-menu="serve">Serve</a>
+                <a href="#" class="nav-link" data-menu="giving">Giving</a>
+                <a href="#" class="nav-link" data-menu="events">Events</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-search" aria-label="Search">&#128269;</button>
+                <button class="nav-give"
+                    onclick="window.open('https://secure.myvanco.com/YNM1/home', '_blank')">Give</button>
+            </div>
+        </div>
+        <div class="nav-menu-overlay" id="navMenuOverlay">
+            <div class="nav-menu-content" id="navMenuContent">
+                <!-- Dynamic menu content will be injected here -->
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-header">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay">
+            <h1 class="hero-title"><strong>Meet Our Staff and<br>
+                Leadership Team</strong></h1>
+            <div class="cta-buttons">
+                <a href="get-involved.html">Get Involved</a>
+                <a href="connections.html" target="_blank" rel="noopener">Connect With Us</a>
+            </div>
+        </div>
+    </header>
+
+   <main>
+    <h2 class="staff-heading">Meet our Staff</h2>
+
+    <section class="staff-section">
+        <div class="staff-grid" id="staffGrid">
+            <!-- Staff cards will be rendered here by JS -->
+        </div>
+    </section>
+
+
+    <h2 class="staff-heading">Volunteer Leadership</h2>
+
+    <section class="staff-section">
+        <div class="staff-grid">
+            <!-- Row 1 -->
+            <div class="staff-card">
+                <img src="images/volunteer_david_reil.jpg" alt="David Reil" class="staff-photo">
+                <div class="staff-info">
+                    <div class="staff-name">David Reil</div>
+                    <div class="staff-title">Admin Council Chair</div>
+                </div>
+            </div>
+            <div class="staff-card">
+                <img src="images/volunteer_scott_seal.png" alt="Scott Seal" class="staff-photo">
+                <div class="staff-info">
+                    <div class="staff-name">Scott Seal</div>
+                    <div class="staff-title">Trustees Chair</div>
+                </div>
+            </div>
+            <div class="staff-card">
+                <img src="images/volunteer_brandon.png" alt="Brandon" class="staff-photo">
+                <div class="staff-info">
+                    <div class="staff-name">Brandon</div>
+                    <div class="staff-title">Staff Relations Chair</div>
+                </div>
+            </div>
+            <div class="staff-card">
+                <img src="images/volunteer_ron_gilkerson.png" alt="Ron Gilkerson" class="staff-photo">
+                <div class="staff-info">
+                    <div class="staff-name">Ron Gilkerson</div>
+                    <div class="staff-title">Finance Chair</div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="staff-card">
+                <img src="images/volunteer_name.png" alt="Name" class="staff-photo">
+                <div class="staff-info">
+                    <div class="staff-name">Name</div>
+                    <div class="staff-title">Lay Leader</div>
+                </div>
+            </div>
+            <div class="staff-card">
+                <img src="images/volunteer_name.jpg" alt="Name" class="staff-photo">
+                <div class="staff-info">
+                    <div class="staff-name">Name</div>
+                    <div class="staff-title">Position</div>
+                </div>
+            </div>
+            <div class="staff-card">
+                <img src="images/volunteer_name.jpg" alt="Name" class="staff-photo">
+                <div class="staff-info">
+                    <div class="staff-name">Name</div>
+                    <div class="staff-title">Position</div>
+                </div>
+            </div>
+            <div class="staff-card">
+                <img src="images/volunteer_teri_dowdy.png" alt="Teri Dowdy" class="staff-photo">
+                <div class="staff-info">
+                    <div class="staff-name">Teri Dowdy</div>
+                    <div class="staff-title">Tech Team Lead</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Shared Footer Placeholder -->
+<footer id="footer"></footer>
+<script src="js/script.js"></script>
+<script src="js/staff.js"></script>
+<script>
+    // Dynamically load the shared footer
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('footer').outerHTML = html;
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+/* Parenting Resources & Care Support Section */
+/* Parenting Resources & Care Support Section - refined for screenshot match */
+.parenting-care-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 4rem 0;
+    background: #fafbfc;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.parenting-care-section .parenting-card,
+.parenting-care-section .care-card {
+    flex: 1;
+    min-width: 400px;
+    max-width: 700px;
+    padding: 2.5rem 3vw 2.5rem 3vw;
+    background: #fafbfc;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.parenting-care-section .parenting-card {
+    border-right: 1px solid #e0e6ed;
+}
+.parenting-care-section h2 {
+    color: #2196f3;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    font-family: inherit;
+}
+.parenting-care-section p {
+    font-size: 0.98rem;
+    color: #143d59;
+    margin-bottom: 1.5rem;
+    line-height: 1.45;
+}
+.parenting-care-section .btn {
+    background: #143d59;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    margin-top: 1.2rem;
+}
+/* adults.css - Styles extracted from adults.html */
+
+.adults-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem 0;
+    padding: 0 6vw;
+}
+.adults-section h1 {
+    color: #2176ae;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.adults-section p {
+    font-size: 1.15rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+.adults-section p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+.adults-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.btn {
+    background: #143d59;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+.cta-section {
+    background: #e9ecef;
+    padding: 2rem 0;
+    text-align: center;
+}
+.adults-quote-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #2196f3;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+.adults-quote-section .quote-mark {
+    font-size: 7rem;
+    color: rgba(255,255,255,0.3);
+    position: absolute;
+}
+.adults-quote-section .quote-text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    display: inline-block;
+    margin: 0 2rem;
+}
+.ministry-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    margin: 4rem 0;
+    background: #fafbfc;
+}
+.ministry-highlights > div {
+    flex: 1;
+    min-width: 400px;
+    padding: 3rem 2vw;
+}
+.ministry-highlights > div:first-child {
+    border-right: 1px solid #e0e6ed;
+}
+.ministry-highlights h2 {
+    color: #2196f3;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.ministry-highlights p {
+    font-size: 1.35rem;
+    color: #143d59;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+.ministry-highlights .btn {
+    background: #143d59;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: inline-block;
+}
+.discipleship-pathways-section {
+    background: #143d59;
+    color: #fff;
+    padding: 5rem 0;
+}
+.discipleship-pathways-section .dp-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.discipleship-pathways-section .dp-intro {
+    flex: 1 1 340px;
+    min-width: 340px;
+    max-width: 400px;
+    margin-right: 2rem;
+}
+.discipleship-pathways-section .dp-intro h2 {
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.discipleship-pathways-section .dp-intro p {
+    font-size: 1.25rem;
+    color: #e0e6ed;
+    line-height: 1.6;
+}
+.discipleship-pathways-section .dp-grid {
+    flex: 2 1 700px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.dp-card {
+    background: #fff;
+    color: #143d59;
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dp-card.blue {
+    background: #2196f3;
+    color: #fff;
+    border: none;
+}
+.dp-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.dp-card p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+.dp-card .btn {
+    background: #fff;
+    color: #143d59;
+    border: 2px solid #143d59;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+.dp-card.blue .btn {
+    border: 2px solid #fff;
+}

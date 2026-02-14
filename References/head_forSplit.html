@@ -1,0 +1,10 @@
+<head>
+  <!-- Critical CSS inline or main.css -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Non-critical CSS loaded async -->
+  <link rel="preload" href="css/components/carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- JavaScript modules -->
+  <script type="module" src="js/main.js"></script>
+</head>

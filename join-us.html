@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholasville Methodist Church</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <style>
+
+        .nav-home-link {
+            color: #fff !important;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-home-link:hover,
+        .nav-home-link:focus {
+            color: #ccc !important;
+        }
+
+        .nav-home-link:active {
+            color: #fff !important;
+        }
+
+        .weekend-services-section {
+            margin: 48px 0 64px 0;
+            padding: 0 0 0 0;
+        }
+
+        .ws-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .ws-map-col {
+            flex: 1 1 340px;
+            min-width: 320px;
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ws-map-box {
+            background: #f8f9fa;
+            border-radius: 24px;
+            padding: 24px 16px 32px 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ws-directions-btn {
+            display: inline-block;
+            background: #fff;
+            color: #0074d9;
+            font-weight: bold;
+            border-radius: 24px;
+            padding: 10px 28px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            text-decoration: none;
+            font-size: 1.1em;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+            border: none;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .ws-directions-btn:hover {
+            background: #e6f0fa;
+            color: #005fa3;
+        }
+
+        .ws-info-col {
+            flex: 2 1 420px;
+            min-width: 320px;
+            max-width: 700px;
+            padding-left: 16px;
+        }
+
+        .ws-title {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #183153;
+            margin-bottom: 18px;
+        }
+
+        .ws-info-row {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 8px;
+        }
+
+        .ws-label {
+            background: #e6ecf3;
+            color: #183153;
+            font-weight: 600;
+            border-radius: 16px;
+            padding: 6px 18px;
+            font-size: 1.1em;
+            margin-right: 8px;
+        }
+
+        .ws-value {
+            color: #183153;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .ws-desc {
+            margin: 24px 0 32px 0;
+            color: #183153;
+            font-size: 1.13em;
+            line-height: 1.6;
+        }
+
+        .ws-desc a {
+            color: #0074d9;
+            text-decoration: underline;
+        }
+
+        .ws-btn-row {
+            display: flex;
+            gap: 24px;
+            margin-top: 12px;
+        }
+
+        .ws-btn {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-radius: 32px;
+            padding: 14px 36px;
+            text-decoration: none;
+            border: 2px solid #0074d9;
+            background: #fff;
+            color: #0074d9;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .ws-btn-outline:hover {
+            background: #e6f0fa;
+            color: #005fa3;
+        }
+
+        .ws-btn-dark {
+            background: #183153;
+            color: #fff;
+            border: 2px solid #183153;
+        }
+
+        .ws-btn-dark:hover {
+            background: #0074d9;
+            color: #fff;
+            border-color: #0074d9;
+        }
+
+        .hero-bg {
+            background: url('images/NMC_Line_Drawing.png') center center/cover no-repeat;
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0.45;
+        }
+
+        .hero-header,
+        .hero-header .hero-title,
+        .hero-header .cta-buttons a {
+            color: #222 !important;
+        }
+
+        .hero-header .cta-buttons a {
+            background: #f8f9fa;
+            color: #183153 !important;
+            border: 2px solid #183153;
+            font-weight: 600;
+            margin-right: 12px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .hero-header .cta-buttons a:hover {
+            background: #e6ecf3;
+            color: #0074d9 !important;
+            border-color: #0074d9;
+        }
+
+        .hero-header .hero-overlay {
+            color: #222 !important;
+        }
+
+        @media (max-width: 900px) {
+            .ws-container {
+                flex-direction: column;
+                gap: 32px;
+                align-items: stretch;
+            }
+
+            .ws-info-col {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <img src="images/NMC_Transparent.png" alt="Nicholasville Methodist Church"
+                    style="height:28px;vertical-align:middle;margin-right:1.25rem;" />
+                <a href="https://www.nmcky.org/" class="nav-home-link">Nicholasville Methodist</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link" data-menu="about">About</a>
+                <a href="#" class="nav-link" data-menu="ministries">Ministries</a>
+                <a href="#" class="nav-link" data-menu="serve">Serve</a>
+                <a href="#" class="nav-link" data-menu="giving">Giving</a>
+                <a href="#" class="nav-link" data-menu="events">Events</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-search" aria-label="Search">&#128269;</button>
+                <button class="nav-give"
+                    onclick="window.open('https://secure.myvanco.com/YNM1/home', '_blank')">Give</button>
+            </div>
+        </div>
+        <div class="nav-menu-overlay" id="navMenuOverlay">
+            <div class="nav-menu-content" id="navMenuContent">
+                <!-- Dynamic menu content will be injected here -->
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-header">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay">
+            <h1 class="hero-title"><strong>Location & Services</strong><br /></h1>
+            <div class="cta-buttons">
+                <a href="https://www.google.com/maps/dir//303+W+Maple+St+Nicholasville,+KY+40356/@37.8810967,-84.5747185,1529m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x88425fbb4d01f09b:0xced2d83959efb2e0!2m2!1d-84.5747185!2d37.8810967?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D">Directions</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Weekend Services Section -->
+    <section class="weekend-services-section">
+        <div class="ws-container">
+            <div class="ws-map-col">
+                <div class="ws-map-box">
+                    <iframe
+                        src="https://www.google.com/maps?q=Nicholasville+Methodist+Church,303+West+Maple+Street,+Nicholasville,+KY+40356&output=embed"
+                        width="100%" height="260" style="border:0; border-radius:18px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Nicholasville+Methodist+Church,303+West+Maple+Street,+Nicholasville,+KY+40356" target="_blank"
+                        class="ws-directions-btn" style="top: 80%;">Get Directions <span style="font-size:1.2em;vertical-align:middle;">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+            <div class="ws-info-col">
+                <h2 class="ws-title">Weekend Services</h2>
+                <div class="ws-info-row">
+                    <span class="ws-label">Address</span>
+                    <span class="ws-value">303 West Maple Street, Nicholasville, KY 40356</span>
+                </div>
+                <div class="ws-info-row">
+                    <span class="ws-label">Service Times</span>
+                    <span class="ws-value">Sunday at 9:30 AM (Adult Sunday School), 10:45 AM (Main Sanctuary)</span>
+                </div>
+                <div class="ws-desc">
+                    <p>NMC is located in the heart of downtown Nicholasville, just two blocks behind the Jessamine County Courthouse.</p>
+                    <p>We strive to be a welcoming home to every person who comes through our doors; our staff and
+                        volunteers would love to talk with you and answer any questions! It’s a good idea to arrive at
+                        least 15 minutes early to visit with your church family!</p>
+                    <p>If you or a family member has a disability and
+                        wants to get connected, please <a href="contact.html">contact us</a>. We would love to support
+                        you!</p>
+                    <p>We try to structure parking in a way that allows the maximum number of people to attend our services. If you
+                        are a first-time visitor, we have special parking spots available!</p>
+                    <p>As far as what to wear, you’re invited to come as you are, whether it’s a suit or shorts you
+                        feel most comfortable wearing. We tend to dress pretty casual.</p>
+                </div>
+                <div class="ws-btn-row">
+                    <a href="contact.html" class="ws-btn ws-btn-outline">Get Connected</a>
+                    <a href="https://www.youtube.com/@nmckytech" class="ws-btn ws-btn-dark" target="_blank">Stream
+                        Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shared Footer Placeholder -->
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+    <script>
+        // Dynamically load the shared footer
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('footer').outerHTML = html;
+            });
+    </script>
+</body>
+
+</html>

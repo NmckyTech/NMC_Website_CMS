@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholasville Methodist Church</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- Non-critical CSS loaded async -->
+    <link rel="preload" href="css/components/carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+
+<body>
+    <!-- Shared Nav Placeholder -->
+    <nav id="main-nav"></nav>
+    <script>
+        // Dynamically load the shared nav
+        fetch('nav.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('main-nav').outerHTML = html;
+            });
+    </script>
+
+    <header class="hero-header">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay">
+            <h1 class="hero-title"><strong>Love God.
+                <br>Love people.
+                <br>Make disciples of Jesus.</strong>
+            </h1>
+            <div class="cta-buttons">
+                <a href="join-us.html">Join Us For Services</a>
+                <a href="https://www.youtube.com/@nmckytech" target="_blank" rel="noopener">Watch Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome Banner Section -->
+    <section class="welcome-banner-section content-section">
+        <div class="section-container">
+            <div class="welcome-banner-container">
+                <div class="welcome-banner-inner">
+                    <div class="welcome-banner-text">
+                        <span>Nicholasville Methodist is a welcoming home, making disciples of Jesus Christ across all
+                            ages and stages of life.</span>
+                    </div>
+                    <div class="welcome-banner-image">
+                        <img src="images/NMC_Line_Drawing.png" alt="Nicholasville Methodist Church Line Drawing" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rotating Banner/Carousel Section -->
+    <section class="banner-carousel content-section">
+        <div class="section-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Each image in its own slide -->
+                    <div class="swiper-slide">
+                        <div class="carousel-item">
+                            <img src="images/rotation1.jpg" alt="NMC_logo" class="carousel-img" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel-item">
+                            <img src="images/rotation2.jpg" alt="Loving our neighbors like Christ" class="carousel-img" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel-item">
+                            <img src="images/rotation3.jpg" alt="Rotation 3" class="carousel-img" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel-item">
+                            <img src="images/rotation4.jpg" alt="Rotation 4" class="carousel-img" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel-item">
+                            <img src="images/rotation5.jpg" alt="Rotation 5" class="carousel-img" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel-item">
+                            <img src="images/rotation6.jpg" alt="Rotation 6" class="carousel-img" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="carousel-item">
+                            <img src="images/rotation7.jpg" alt="Rotation 7" class="carousel-img" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Blocks Section -->
+    <section class="content-blocks content-section">
+        <div class="section-container">
+            <h2>Connect with us</h2>
+            <div class="feature-blocks-row">
+                <div class="feature-block newhere">
+                    <div class="feature-content">
+                        <h2>New Here?</h2>
+                        <p>Learn who we are and what we believe</p>
+                        <a href="new-here.html" class="feature-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="feature-block events">
+                    <div class="feature-content">
+                        <h2>Upcoming Events</h2>
+                        <p>Explore your identity, belonging, and purpose in a group or class.</p>
+                        <a href="events.html" class="feature-link">Browse Events</a>
+                    </div>
+                </div>
+                <div class="feature-block serve">
+                    <div class="feature-content">
+                        <h2>Serve with Us</h2>
+                        <p>Use your gifts to serve and disciple those around you</p>
+                        <a href="serve.html" class="feature-link">Get Involved</a>
+                    </div>
+                </div>
+                <div class="feature-block prayer">
+                    <div class="feature-content">
+                        <h2>Prayer & Care</h2>
+                        <p>Need prayer or support? We can help.</p>
+                        <a href="care.html" class="feature-link">Request Prayer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Bulletin Section -->
+    <section class="weekly-bulletin-section content-section">
+        <div class="section-container">
+            <div class="weekly-bulletin-container">
+                <div class="weekly-bulletin-content">
+                    <h2 class="weekly-bulletin-title">Weekly Bulletin</h2>
+                    <div class="weekly-bulletin-desc">Key announcements and updates from NMC</div>
+                </div>
+                <img src="images/bulletin.png" alt="Weekly Bulletin" class="weekly-bulletin-svg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermon Section -->
+    <section class="sermon content-section">
+        <div class="sermon-container">
+            <div class="sermon-flex">
+                <section class="sermon-main">
+                    <header class="sermon-header">
+                        <h2 class="sermon-title">Latest Sermon</h2>
+                        <a href="https://www.youtube.com/@nmckytech" target="_blank" rel="noopener"></a>
+                            <a href="sermons.html" target="_blank" rel="noopener" class="sermon-link">View All Sermons</a>
+                    </header>
+                    <div class="sermon-inner-flex">
+                        <div class="sermon-image-wrapper">
+                            <img src="images/Pastor_Tim.jpg" alt="Latest Sermon" class="sermon-image" />
+                        </div>
+                        <aside class="sermon-quote">
+                            <div class="sermon-quote-mark">&#10077;</div>
+                            <blockquote class="sermon-quote-text">Heaven Has No Walls, Fences, or Doctrines. It Only Has
+                                Blood Bought, Blood Washed, Redeemed Souls!</blockquote>
+                            <footer class="sermon-quote-ref">1 Timothy 2:1-6 and John 10:7-18</footer>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two-Column Content Blocks -->
+    <section class="content-blocks-section">
+        <div class="content-blocks-row">
+            <section class="content-block content-block-left">
+                <div class="content-block-inner">
+                    <h2>Have a question?<br>We want to help.</h2>
+                    <a href="contact.html" class="content-block-btn">Contact Us</a>
+                </div>
+                <div class="content-block-overlay"></div>
+            </section>
+            <section class="content-block content-block-right">
+                <div class="content-block-inner">
+                    <h2>Want to stay in the loop?</h2>
+                    <div class="content-block-links">
+                        <a href="newsletter.html" class="content-block-btn">Subscribe to the NMC News</a>
+                        <a href="https://www.facebook.com/NichMCKY/" target="_blank" rel="noopener"
+                            class="content-block-btn">Join Our Facebook Group</a>
+                        <a href="https://www.instagram.com/nicholasvillemethodist/" target="_blank" rel="noopener"
+                            class="content-block-btn">Follow Us On Instagram</a>
+                    </div>
+                </div>
+                <div class="content-block-overlay"></div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Shared Footer Placeholder -->
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+    <script>
+        // Dynamically load the shared footer
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('footer').outerHTML = html;
+            });
+    </script>
+</body>
+
+</html>
