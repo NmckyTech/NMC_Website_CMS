@@ -545,7 +545,7 @@ Monthly Cost: ~$13 (DigitalOcean + domain)
 Technical Level: Intermediate (I can help with any step!)
 🔧 What You Need Right Now:
 
-Choose a domain name for your CMS (e.g., cms.nmcky.org or admin.nmcky.org)
+Choose a domain name for your CMS (e.g., cms.nichmc.org or admin.nichmc.org)
 Sign up for DigitalOcean (or preferred hosting)
 Follow the step-by-step guide above
 

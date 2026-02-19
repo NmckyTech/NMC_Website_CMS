@@ -77,7 +77,7 @@ cd church-cms
 ```javascript
 // Create ALL content types in one focused week:
 ✅ Heroes (homepage content)
-✅ Services (service times & descriptions)  
+✅ Services (service times & descriptions)
 ✅ Staff Members (complete directory with photos)
 ✅ Events (church calendar with registration)
 ✅ Sermons (audio/video links, notes, scripture)
@@ -135,7 +135,7 @@ cd church-cms
 ✅ Integrate ChurchCMS class with local API
 ✅ Update all content loading functions:
   - updateHeroSection() → CMS data
-  - updateServiceTimes() → CMS data  
+  - updateServiceTimes() → CMS data
   - updateLatestSermon() → CMS data
   - updateStaffDirectory() → CMS data
   - updateEventsSection() → CMS data
@@ -209,7 +209,7 @@ cd church-cms
 #### **Week 1 (Nov 1-7): Nginx Configuration & SSL**
 ```nginx
 # Complete nginx production configuration:
-✅ Optimized server blocks for nmcky.org and cms.nmcky.org
+✅ Optimized server blocks for nichmc.org and cms.nichmc.org
 ✅ SSL certificate installation (Let's Encrypt)
 ✅ Security headers (HSTS, CSP, X-Frame-Options)
 ✅ Gzip compression for all text content
@@ -417,7 +417,7 @@ December: Training + Documentation + Final prep
 ```bash
 # Your time commitment (estimated):
 August: 10 hours/week (hardware setup)
-September: 15 hours/week (CMS configuration)  
+September: 15 hours/week (CMS configuration)
 October: 20 hours/week (integration work)
 November: 10 hours/week (server optimization)
 December: 15 hours/week (training and prep)
@@ -466,7 +466,7 @@ Net additional cost: $105/year (after massive capability upgrade)
 **Your immediate action items for August:**
 
 1. **Order UPS immediately** if not already included
-2. **Order backup drive** if not already included  
+2. **Order backup drive** if not already included
 3. **Confirm static IP pricing** with ISP
 4. **Prepare network rack space** for Mac Mini installation
 5. **Schedule any network configuration** assistance needed

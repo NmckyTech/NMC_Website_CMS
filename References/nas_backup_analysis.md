@@ -90,7 +90,7 @@ NAS Premium: $280 ($400 vs $120)
 Benefits Gained:
 - Hardware redundancy (priceless for church)
 - Automated professional backups
-- Remote management and monitoring  
+- Remote management and monitoring
 - Future expansion capabilities
 - Enterprise features and reliability
 
@@ -110,7 +110,7 @@ Failure Tolerance: 1 drive can fail with zero data loss
 
 # Network Setup:
 IP Address: 192.168.100.20 (same VLAN as Mac Mini)
-Hostname: backup.nmcky.local
+Hostname: backup.nichmc.local
 Access: Web interface + mobile app
 Security: HTTPS, user authentication
 ```
@@ -122,7 +122,7 @@ Security: HTTPS, user authentication
 # Job 1: Database Backup (Daily at 2 AM)
 pg_dump church_cms | gzip > /Volumes/NAS/backups/db/church_$(date +%Y%m%d).sql.gz
 
-# Job 2: Website Files (Daily at 2:30 AM)  
+# Job 2: Website Files (Daily at 2:30 AM)
 rsync -avz /usr/local/var/www/church-website/ /Volumes/NAS/backups/website/
 
 # Job 3: CMS Uploads (Daily at 3 AM)
@@ -193,7 +193,7 @@ LOG_FILE="/var/log/church-backup.log"
 echo "$(date): Starting NAS backup..." >> $LOG_FILE
 
 # Mount NAS if not already mounted
-if ! mount | grep -q "backup.nmcky.local"; then
+if ! mount | grep -q "backup.nichmc.local"; then
     mkdir -p /Volumes/ChurchNAS
     mount -t smbfs //admin@$NAS_IP$NAS_PATH /Volumes/ChurchNAS
 fi
@@ -286,7 +286,7 @@ echo "$(date): NAS backup completed" >> $LOG_FILE
    - Integrates with your fiber infrastructure
 
 3. **Future-Proof Investment**
-   - Scalable storage (add drives as needed)  
+   - Scalable storage (add drives as needed)
    - Multiple use cases beyond backup
    - Professional disaster recovery
 
@@ -331,7 +331,7 @@ Optional Future Upgrade:
 ✅ Basic connectivity testing
 ✅ Initial backup job setup
 
-# Week 2: Network Infrastructure (UPDATED)  
+# Week 2: Network Infrastructure (UPDATED)
 ✅ NAS network optimization
 ✅ Automated backup script development
 ✅ NAS web interface configuration

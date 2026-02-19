@@ -88,19 +88,19 @@ Port 22 (SSH) → Mac Mini IP:22 (for remote management)
 
 ### **Step 4: Domain Configuration**
 
-Since you own `nmcky.org`, you need to:
+Since you own `nichmc.org`, you need to:
 
 #### **Update DNS Records:**
 ```bash
-# At your domain registrar (where you bought nmcky.org):
-A Record: nmcky.org → YOUR_STATIC_IP
-A Record: www.nmcky.org → YOUR_STATIC_IP
-A Record: cms.nmcky.org → YOUR_STATIC_IP
+# At your domain registrar (where you bought nichmc.org):
+A Record: nichmc.org → YOUR_STATIC_IP
+A Record: www.nichmc.org → YOUR_STATIC_IP
+A Record: cms.nichmc.org → YOUR_STATIC_IP
 
 # Example if your static IP is 123.45.67.89:
-nmcky.org → 123.45.67.89
-www.nmcky.org → 123.45.67.89
-cms.nmcky.org → 123.45.67.89
+nichmc.org → 123.45.67.89
+www.nichmc.org → 123.45.67.89
+cms.nichmc.org → 123.45.67.89
 ```
 
 #### **Transfer Domain from Dreamhost:**
@@ -197,7 +197,7 @@ http {
     # Your main website
     server {
         listen 80;
-        server_name nmcky.org www.nmcky.org;
+        server_name nichmc.org www.nichmc.org;
         root /usr/local/var/www/church-website;
         index index.html;
 
@@ -215,7 +215,7 @@ http {
     # Strapi CMS
     server {
         listen 80;
-        server_name cms.nmcky.org;
+        server_name cms.nichmc.org;
 
         location / {
             proxy_pass http://127.0.0.1:1337;
@@ -239,7 +239,7 @@ http {
 brew install certbot
 
 # Get SSL certificates
-sudo certbot certonly --standalone -d nmcky.org -d www.nmcky.org -d cms.nmcky.org
+sudo certbot certonly --standalone -d nichmc.org -d www.nichmc.org -d cms.nichmc.org
 
 # Update Nginx config for HTTPS
 sudo nano /opt/homebrew/etc/nginx/nginx.conf
@@ -252,17 +252,17 @@ Add HTTPS configuration:
 # Redirect HTTP to HTTPS
 server {
     listen 80;
-    server_name nmcky.org www.nmcky.org cms.nmcky.org;
+    server_name nichmc.org www.nichmc.org cms.nichmc.org;
     return 301 https://$server_name$request_uri;
 }
 
 # Main website HTTPS
 server {
     listen 443 ssl;
-    server_name nmcky.org www.nmcky.org;
+    server_name nichmc.org www.nichmc.org;
 
-    ssl_certificate /etc/letsencrypt/live/nmcky.org/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/nmcky.org/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/nichmc.org/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/nichmc.org/privkey.pem;
 
     root /usr/local/var/www/church-website;
     index index.html;
@@ -275,10 +275,10 @@ server {
 # CMS HTTPS
 server {
     listen 443 ssl;
-    server_name cms.nmcky.org;
+    server_name cms.nichmc.org;
 
-    ssl_certificate /etc/letsencrypt/live/nmcky.org/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/nmcky.org/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/nichmc.org/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/nichmc.org/privkey.pem;
 
     location / {
         proxy_pass http://127.0.0.1:1337;
@@ -364,7 +364,7 @@ npm install @strapi/migration-tool
 /usr/local/var/www/church-website/
 
 # Update JavaScript to use local CMS:
-const churchCMS = new ChurchCMS('https://cms.nmcky.org/api');
+const churchCMS = new ChurchCMS('https://cms.nichmc.org/api');
 ```
 
 ## 📊 Cost Comparison
@@ -485,7 +485,7 @@ proxy_cache_path /tmp/nginx_cache levels=1:2 keys_zone=my_cache:10m max_size=10g
 ## 📱 Volunteer Training
 
 ### **Simple Access for Volunteers:**
-1. **Give them:** `https://cms.nmcky.org/admin`
+1. **Give them:** `https://cms.nichmc.org/admin`
 2. **Their login:** Email + password you create
 3. **Simple guide:** "Click the content type, edit, save, publish"
 

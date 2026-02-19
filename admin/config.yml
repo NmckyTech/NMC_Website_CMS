@@ -2,7 +2,6 @@ backend:
   name: github
   repo: NmckyTech/NMC_Website_CMS
   branch: main
-  base_url: https://api.github.com
 
 
 publish_mode: editorial_workflow
